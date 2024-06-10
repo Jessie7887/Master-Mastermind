@@ -14,8 +14,8 @@ game = MastermindGame
 
 def peg_place():  # where we put the pegs
     # if it passes all the checks and the guesses count goes down....
-    r = "R"
-    w = "W"
+    r = chr(164)
+    w = "?"
     u = "_"
     peg_list = []
     for i in game.ask_list:
