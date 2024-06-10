@@ -1,11 +1,7 @@
 
 
-# Enter Code Below ---------------------------------
-# HEADER --------------------------
-# Name: Jessica Twumasi
-# Date: April 1st, 2024
-# Description: A Program that prints that plays a simplified version
-# of the game 'Mastermind'
+# ---------------------------------
+# A Program that prints that plays a simplified version of the game 'Mastermind'
 # ---------------------------------
 import ErrorMessages
 error = ErrorMessages
@@ -24,7 +20,7 @@ results = Results
 # ****************************************************************
 legal_colors = ['R', 'G', 'B', 'Y', 'W', 'O', 'M', 'V']
 
-
+# color generator
 def generate_color_sequence():
     import random
     random.seed()
@@ -90,7 +86,7 @@ def game(guesses=5, count=1): # main game
             error.length_error()
         else:
             checks += 1
-        print(f'How many check so far....{checks}/4 | Note: If you pass all the checks with 4/4, you get another guess :)')
+        # print(f'How many check so far....{checks}/4 | Note: If you pass all the checks with 4/4, you get another guess :)')
 
         if checks == 4:
             guesses -= 1    # guesses will decrement at wrong VALID entries only
